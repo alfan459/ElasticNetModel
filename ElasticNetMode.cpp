@@ -44,3 +44,12 @@ void ElasticNetModel::printCoefficients() {
   Serial.print("  Intercept: ");
   Serial.println(_intercept);
 }
+
+// getFunction
+float ElasticNetModel::getCoefVolume() { return _coefVolume; }
+float ElasticNetModel::getCoefWaktu() { return _coefWaktu; }
+float ElasticNetModel::getIntercept() { return _intercept; }
+float ElasticNetModel::getAlpha() { return _alpha; }
+float ElasticNetModel::getL1Ratio() { return _l1_ratio; }
+float ElasticNetModel::getLearningRate() { return _learningRate; }
+
