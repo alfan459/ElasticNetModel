@@ -20,6 +20,16 @@ class ElasticNetModel {
     // Print current model coefficients
     void printCoefficients();
 
+    // Getter methods
+    float getCoefVolume();  // Get coefficient for volume
+    float getCoefWaktu();   // Get coefficient for waktu
+    float getIntercept();   // Get intercept
+    float getAlpha();   	// Get Alpha
+    float getL1Ratio();   	// Get L1 Ratio
+    float getLearningRate(); // Get learning rate
+
+
+
   private:
     float _coefVolume;   // Coefficient for volume
     float _coefWaktu;    // Coefficient for waktu
